@@ -6,8 +6,8 @@
 Conditions that must be met before use:
  
   1. Install python3.9 or higher
-  2. Install pynput dependency library via pip
-    Installation command: py -m pip install pynput
+  2. Install `pynput` dependency library via pip
+    Installation command: `py -m pip install pynput`
  
   After meeting the above two conditions, you can double-click or right-click to run through python
  
