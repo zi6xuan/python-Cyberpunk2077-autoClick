@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/python3
 # encoding=utf-8
 import time
 from pynput.mouse import Button, Controller
@@ -20,8 +20,10 @@ def on_release(key):
     global isAuto
     if key == keyboard.KeyCode.from_char('h'):
         isAuto = True
+        print("auto click is started")
     elif key == keyboard.KeyCode.from_char('g'):
         isAuto = False
+        print("auto click is stoped")
     if key == keyboard.Key.esc:
         # Stop listener
         return False
@@ -39,7 +41,7 @@ listener = keyboard.Listener(
 listener.start()
 
 def threadfunc( threadName, delay):
-    while True :
+    while True:
         if isAuto:
             mouse.press(Button.left)
             time.sleep(1.12)
@@ -51,4 +53,4 @@ try:
     t = Thread(target=threadfunc, args=("ThreadAuto",0.5))
     t.start()
 except:
-   print("Error: unable to start thread")
+    print("Error: unable to start thread")
