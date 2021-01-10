@@ -1,6 +1,8 @@
 
 # Cyberpunk2077-autoClick
 
+[中文手册](https://github.com/zi6xuan/python-Cyberpunk2077-autoClick/blob/main/README.md)
+
 Conditions that must be met before use:
  
   1. Install python3.9 or higher
