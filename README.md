@@ -1,5 +1,7 @@
 # 赛博朋克2077-自动点击制造脚本
 
+English[https://github.com/zi6xuan/python-Cyberpunk2077-autoClick/edit/main/README-en.md
+
  使用之前必须要满足的条件：
  
  1. 安装python3.9以上版本
