@@ -24,9 +24,9 @@ def on_release(key):
     elif key == keyboard.KeyCode.from_char('g'):
         isAuto = False
         print("auto click is stoped")
-    if key == keyboard.Key.esc:
-        # Stop listener
-        return False
+    # if key == keyboard.Key.esc:
+    #     # Stop listener
+    #     return False
 
 # # Collect events until released
 # with keyboard.Listener(
@@ -44,7 +44,7 @@ def threadfunc( threadName, delay):
     while True:
         if isAuto:
             mouse.press(Button.left)
-            time.sleep(1.12)
+            time.sleep(1)
             mouse.release(Button.left)
         else:
             time.sleep(delay)
